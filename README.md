@@ -49,9 +49,9 @@ Maximize robustness with fast start and graceful shustdown.
 The app should start fast and shut down cleanly.
 make it easy to restartor move it anytime.
 
-## Development
+## Development/ Production Parity
 Keep development, staging and production as simple as possible.
-It simply means that the evelopment and production environment must be as similar as possible. The processes being used, technologies and the infrastructure must be the same. This will help you in a way that whatever error that can happen over time will happen at the development stage itself instead of surprisingly occurring in the production. 
+It simply means that the development and production environment must be as similar as possible. The processes being used, technologies and the infrastructure must be the same. This will help you in a way that whatever error that can happen over time will happen at the development stage itself instead of surprisingly occurring in the production. 
 
 ## Logs
 Treat log as event streams.
@@ -74,10 +74,10 @@ Templates - They offer a struture of a website.
 Pages - The final products of the design process.
 
 ## Benefits of Atomic Design
-Consistency
-Efficiency
-Scalability
-Reusability
+* Consistency
+* Efficiency
+* Scalability
+* Reusability
 
 
 # Git vs Github
