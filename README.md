@@ -86,3 +86,9 @@ IT is a software. It is a command-line tool. It is locally installed on the syst
 
 ## GitHub
 GitHub is a web-based Git repository hosting service, which offers all of the distributed revision control and source code management (SCM) functionality of Git as well as adding its own features. 
+
+## Gitignore
+This is useful for keeping log files, temporary files, build artifacts, or personal files out of your repository. Such as log files, temporary files, hidden files, personal files, OS/editor files, etc.
+
+## Git Config
+It is the command used to set configuration values in Git, like your name, email, editor etc. These values tell git how to behave.
