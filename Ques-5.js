@@ -1,5 +1,7 @@
-const str= "hello john doe";
-/*const arr= str.split(" ");
+// 5. Write a program to convert given string in camel case ("hello john doe" => helloJohnDoe)
+
+/*const str= "hello john doe";
+const arr= str.split(" ");
 var str1 = "";
 str1+= arr[0];
 // console.log(str1);
@@ -16,16 +18,18 @@ for (i=1;i<arr.length;i++)
 }
  console.log(str1);
 */
-var str1=" ";
- for(i=0;i<str.length;i++)
- {
-    if(str[i]==" ")
-    {
-        str1+=str[i+1].toUpperCase();
-        i++;
+
+const str = "hello john doe";
+function convertComelCase(str) {
+  var str1 = " ";
+  for (i = 0; i < str.length; i++) {
+    if (str[i] == " ") {
+      str1 += str[i + 1].toUpperCase();
+      i++;
+    } else {
+      str1 += str[i];
     }
-    else{
-        str1+= str[i];
-    }
- }
- console.log(str1);
+  }
+  console.log(str1);
+}
+convertComelCase(str);

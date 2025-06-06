@@ -1,18 +1,20 @@
+// 3. Write a program to give count of variables in a string ("abcabcdabbcc" => "a3b4c4d1")
+
 const str = "abcabcdabbcc";
-var arr= new Set(str);  //to get the unique values
-var newStr=" ";
-var count=0 ;
-for(i of arr){
-    count=0; 
-    for(j=0;j<str.length;j++)
-    {
-        if(i==str[j])
-        {
-            count++;
-        } 
+function countVaribleString(str) {
+  var arr = new Set(str); //to get the unique values
+  var countStr = " ";
+  var count = 0;
+  for (let i of arr) {
+    count = 0;
+    for (let j = 0; j < str.length; j++) {
+      if (i == str[j]) {
+        count++;
+      }
     }
     count = String(count);
-    newStr+=i+count;
-    
+    countStr += i + count;
+  }
+  console.log(countStr);
 }
-console.log(newStr);
+countVaribleString(str);

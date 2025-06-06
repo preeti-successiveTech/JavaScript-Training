@@ -1,14 +1,15 @@
+// 2.Write a program to reverse a string ("Hello John" => "olleH nhoJ")
+
 const str = "Hello John";
-const newstr = str.split(" ");
-console.log(newstr);
-let re=" ";
-for(i of newstr)
-{
-    for(j=i.length-1;j>=0;j--)
-    {
-        re+= i[j];
+function revseseStr(str) {
+  const newstr = str.split(" ");
+  let reverseStr = " ";
+  for (let i of newstr) {
+    for (let j = i.length - 1; j >= 0; j--) {
+      reverseStr += i[j];
     }
-    re+= " ";
-    
+    reverseStr += " ";
+  }
+  console.log(reverseStr);
 }
-console.log(re);
+revseseStr(str);
