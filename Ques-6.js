@@ -3,18 +3,15 @@
 function displayPrimeNo(range) {
   let arr = [];
   for (let i = 1; i <= range; i++) {
-    let count=0;
+    let count = 0;
     for (let j = 1; j <= i / 2; j++) {
       if (i % j == 0) {
         count++;
       }
-      
-      
     }
-    if(count==1)
-      {
-        arr.push(i);
-      }
+    if (count == 1) {
+      arr.push(i);
+    }
   }
   console.log(arr);
 }
