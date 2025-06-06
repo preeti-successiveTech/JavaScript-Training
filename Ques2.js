@@ -1,6 +1,6 @@
 // 2. Write a function to take input(age, name, phone no.) from user and display it
 
-function takeinput() {
+function takeInputFromUser() {
   const name = prompt("Enter your name:");
   const age = prompt("Enter your age");
   const phoneno = prompt("Enter your phoneno");
@@ -8,4 +8,4 @@ function takeinput() {
   console.log("Age is :" + age);
   console.log("Phone No is :" + phoneno);
 }
-takeinput();
+takeInputFromUser();
