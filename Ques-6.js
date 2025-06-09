@@ -2,8 +2,8 @@
 
 const arr = [10, 20, 2, 3, 3];
 function sumOfArray(arr) {
-  var sum = 0;
-  for (var i of arr) {
+  let sum = 0;
+  for (let i of arr) {
     sum += i;
   }
   console.log(sum);

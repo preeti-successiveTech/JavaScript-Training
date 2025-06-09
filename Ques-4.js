@@ -8,9 +8,9 @@ const str2 = "GaRG";
 // var newStr2 = str2.toLowerCase();
 // console.log(newStr2);
 function upperCase(str) {
-  var strUpper = " ";
+  let strUpper = " ";
   for (let i in str) {
-    var code = str.charCodeAt(i); // charCodeAt to fetch the ASCII value of that character
+    let code = str.charCodeAt(i); // charCodeAt to fetch the ASCII value of that character
     if (code >= 65 && code <= 91) {
       strUpper += str[i];
     } else {
@@ -20,9 +20,9 @@ function upperCase(str) {
   return strUpper;
 }
 function lowerCase(str) {
-  var strLower = " ";
+  let strLower = " ";
   for (let i in str) {
-    var code = str.charCodeAt(i);
+    let code = str.charCodeAt(i);
     if (code >= 65 && code <= 91) {
       strLower += String.fromCharCode(code + 32);
     } else {

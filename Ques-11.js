@@ -1,8 +1,8 @@
 // 11. Write a program to sort an array (bubble sort)
 
-var arr = [10, 2, 3, 4, 10, 5, 3, 20, 6];
+let arr = [10, 2, 3, 4, 10, 5, 3, 20, 6];
 function sortArray(arr) {
-  var temp;
+  let temp;
   for (let i = 0; i < arr.length; i++) {
     for (let j = 0; j < arr.length - i - 1; j++) {
       if (arr[j] > arr[j + 1]) {

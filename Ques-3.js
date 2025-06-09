@@ -2,9 +2,9 @@
 
 const str = "abcabcdabbcc";
 function countVaribleString(str) {
-  var arr = new Set(str); //to get the unique values
-  var countStr = " ";
-  var count = 0;
+  let arr = new Set(str); //to get the unique values
+  let countStr = " ";
+  let count = 0;
   for (let i of arr) {
     count = 0;
     for (let j = 0; j < str.length; j++) {

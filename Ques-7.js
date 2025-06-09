@@ -4,9 +4,9 @@ const arr = [10, 2, 3, 4, 5, 2, 3, 6, 10, 2, 2];
 function findIndexOfDulicate(arr) {
   const newArr = new Set(arr);
   const n = [];
-  var count = 0;
-  for (var i of newArr) {
-    for (var j = 0; j < arr.length; j++) {
+  let count = 0;
+  for (let i of newArr) {
+    for (let j = 0; j < arr.length; j++) {
       if (i == arr[j]) {
         count++;
 
