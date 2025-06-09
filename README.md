@@ -1,7 +1,7 @@
 # JavaScript-Training
 
 # Twelve-Factor App
-This is a set of 12 peinciple or best practices for building web application which is commonly known as Software as a Service(SAAS) application. 
+This is a set of 12 principle or best practices for building web application which is commonly known as Software as a Service(SAAS) application. 
 These principle help us to create the application that use declarative programming for automation of setup which reduce the development time and reduce the cost of the project. 
 It is a methodoloy to develop scalable, maintainable and portable web application.
 
