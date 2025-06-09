@@ -3,11 +3,10 @@
 function randomNumber() {
   return Math.floor(Math.random() * 10) + 1;
 }
-
 let previousRandomNumber = randomNumber();
 let currentRandomNumber = randomNumber();
 
-while (previousRandomNumber == currentRandomNumber) {
+while(previousRandomNumber == currentRandomNumber) {
   currentRandomNumber += 1;
 }
 console.log(currentRandomNumber);
