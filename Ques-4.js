@@ -10,16 +10,12 @@ const obj = {
     designation: "manager",
   },
 };
-const deepCloneObject = (obj) => {
-  const newObj = {};
-  for (let i in obj) {
-    newObj[i] = obj[i];
-  }
-  console.log(newObj);
-  newObj.name = "Preeti"; // change in the deep copy
-  newObj.employee.employeeid = 3; // change in nested object
-  console.log(newObj);
-};
 
-deepCloneObject(obj);
+const deepCloneObject = (obj) =>{
+  const cloneObject = structuredClone(obj);
+  cloneObject.employee.employeeid =  3;
+  console.log(cloneObject);
+}
+
+console.log(deepCloneObject(obj));
 console.log(obj);
