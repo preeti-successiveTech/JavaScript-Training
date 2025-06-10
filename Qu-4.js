@@ -7,14 +7,14 @@ const obj = {
   phoneNo: "12345678",
   arr: [1, 2, 3, 4, 5],
   employee: {
-    employeeid: 2,
+    employeeId: 2,
     designation: "manager",
   },
 };
 
 const deepCloneObject = (obj) =>{
   const cloneObject = structuredClone(obj);
-  cloneObject.employee.employeeid =  3;
+  cloneObject.employee.employeeId =  3;
   console.log(cloneObject);
 }
 
