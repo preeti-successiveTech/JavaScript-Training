@@ -1,0 +1,32 @@
+// 3.2 Create a class Student that inherits from the Person class and has a property studies. Override the greeting() method to include information about what the student is studying.
+class person {
+  constructor(name, age) {
+    this.name = name;
+    this.age = age;
+  }
+  greeting() {
+    console.log("name is " + this.name + ". and age is " + this.age);
+  }
+}
+class Student extends person {
+  constructor(name, age, studies) {
+    super(name, age);
+    this.studies = studies;
+  }
+
+  greeting() {
+    super.greeting();
+
+    console.log(
+      "name is " +
+        this.name +
+        ". and age is " +
+        this.age +
+        " and studies in " +
+        this.studies
+    );
+  }
+}
+
+const objStudent = new Student("John", 30, "JavaScript");
+objStudent.greeting();
