@@ -13,6 +13,7 @@ class Rectangle extends shape {
     this.width = width;
     this.height = height;
   }
+
   getArea() {
     console.log("Area of rectangle  " + this.width * this.height);
   }
@@ -26,8 +27,8 @@ class Triangle extends shape {
     console.log("Area of Triangle  " + 0.5 * this.width * this.height);
   }
 }
-
-const objRectangle = new Rectangle(30, 20);
+const obj = new shape(30, 20);
+const objRectangle = new Rectangle(13, 56);
 objRectangle.getArea();
 const objTriangle = new Triangle(20, 10);
 objTriangle.getArea();
